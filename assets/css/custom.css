@@ -1,0 +1,57 @@
+body {
+  background-color: #FFFFF7!important;
+  font-family: 'Lato Thin', sans-serif;
+}
+
+.judul-parade{
+  font-size: x-large;
+  font-family: 'Lato', sans-serif;
+}
+
+.justify{
+ text-align: justify;
+}
+
+.caption{
+  font-size: 1.4rem;
+  font-weight: 500;
+  margin-top: 5px;
+  margin-bottom: 0;
+}
+
+.nav{
+	 color:#846C63;
+}
+
+.floating-button-custom{
+	background-color: #00BCD4;
+}
+
+.custom-sidebar{
+	background-color: #0097A7;
+}
+
+.icon {
+  position: absolute;
+  padding-top: 13px;
+  margin-right: 5px;
+}
+
+.brand-logo {
+  font-family: 'Abel', sans-serif;
+  text-transform: uppercase;
+  left:50px;
+}
+
+.create_an_event{
+	color: white;
+}
+
+.form-create{
+	color: white;
+}
+
+.nav-atas{
+	position: absolute;
+}
+

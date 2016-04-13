@@ -26,16 +26,96 @@
             $('.scrollspy').scrollSpy();
           });  
       </script>
+      <script type="text/javascript">
+      $(document).ready(function(){
+         $(".button-collapse").sideNav();
+          });
+         
+      </script>
 </head>
 <body>
 <header>
 <div class="navbar-fixed">
 <nav class="top-nav">
 <div class="container">
-    <div class="nav-wrapper fixed"><a class="judul-parade">DOKUMENTASI PARADE WEB DEVELOPMENT</a></div>
+    <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
+    <div class="nav-wrapper fixed"><a class="judul-parade"><div class="hide-on-med-and-down">DOKUMENTASI PARADE WEB DEVELOPMENT</div></a>
+    <div class="nav-wrapper fixed"><a class="judul-parade"><div class="hide-on-large-only"><center>PARADE WEB</center></div></a></div>
 </div>
 </nav>
 </div>
+<ul class="side-nav" id="mobile-demo">
+         <table>
+          <tr>
+            <td>
+            <img src="assets/img/cnc.png" width="90">
+            </td>
+            <td class="center">
+              <b>Computer and Commmunication Laboratory</b>
+            </td>
+          </tr>
+        </table>
+        <li class="no-padding">
+          <ul class="collapsible collapsible-accordion">
+            <li class="bold"><a class="collapsible-header waves-effect waves-teal">
+            <i class="large material-icons">label</i>Pendahuluan</a>
+              <div class="collapsible-body">
+                <ul>
+                  <li><a href="#ionic">Pengenalan Ionic</a></li>
+                  <li><a href="#codeigniter">Pengenalan CodeIgniter</a></li>
+                  <li><a href="#mvc">Konsep MVC</a></li>
+                  <li><a href="#api">Konsep API</a></li>
+                </ul>
+              </div>
+            </li>
+          </ul>
+        </li>
+        <li class="no-padding">
+          <ul class="collapsible collapsible-accordion">
+            <li class="bold"><a class="collapsible-header waves-effect waves-teal">
+            <i class="large material-icons">label</i>Instalasi Ionic</a>
+              <div class="collapsible-body">
+                <ul>
+                  <li><a href="#install_nodejs">Instalasi NodeJS</a></li>
+                  <li><a href="#install_ionic">Instalasi Ionic</a></li>
+                </ul>
+              </div>
+            </li>
+          </ul>
+        </li>
+        <li class="no-padding">
+          <ul class="collapsible collapsible-accordion">
+            <li class="bold"><a class="collapsible-header waves-effect waves-teal">
+            <i class="large material-icons">label</i>Create App</a>
+              <div class="collapsible-body">
+                <ul>
+                  <li><a href="#buat_project_ionic">Buat Project Ionic</a></li>
+                  <li><a href="#struktur_folder_template_blank_ionic">Struktur Folder Ionic</a></li>
+                  <li><a href="#konfigurasi_file_index">Konfigurasi File index</a></li>
+                  <li><a href="#konfigurasi_app_js">Konfigurasi app.js</a></li>
+                  <li><a href="#membuat_halaman_tentang">Tentang Page</a></li>
+                  <li><a href="#halaman_daftar_asisten">Daftar Asisten Page</a></li>
+                </ul>
+              </div>
+            </li>
+          </ul>
+        </li>
+        <li class="no-padding">
+          <ul class="collapsible collapsible-accordion">
+            <li class="bold"><a class="collapsible-header waves-effect waves-teal">
+            <i class="large material-icons">label</i>Create API</a>
+              <div class="collapsible-body">
+                <ul>
+                  <li><a href="#api_codeigniter">API CodeIgniter</a></li>
+                  <li><a href="#instalasi_codeigniter">Instalasi CodeIgniter</a></li>
+                  <li><a href="#instalasi_materialize">Instalasi Materialize</a></li>
+                  <li><a href="#konfigurasi_codeigniter">Konfig CI</a></li>
+                </ul>
+              </div>
+            </li>
+          </ul>
+        </li>
+</ul>
 <ul id="nav-mobile" class="side-nav fixed">
         <table>
           <tr>
@@ -79,7 +159,7 @@
                 <ul>
                   <li><a href="#buat_project_ionic">Buat Project Ionic</a></li>
                   <li><a href="#struktur_folder_template_blank_ionic">Struktur Folder Ionic</a></li>
-                  <li><a href="#konfigurasi_file_index">Konfigurasi File index.html</a></li>
+                  <li><a href="#konfigurasi_file_index">Konfigurasi File index</a></li>
                   <li><a href="#konfigurasi_app_js">Konfigurasi app.js</a></li>
                   <li><a href="#membuat_halaman_tentang">Tentang Page</a></li>
                   <li><a href="#halaman_daftar_asisten">Daftar Asisten Page</a></li>
@@ -101,15 +181,18 @@
         </li>
 </header>
 <main>      
+<div class="container">
+<div class="row">
+      <div class="col l12 m12 s12">
 <div class="section no-pad-bot" id="index-banner">
-        <div style="text-align: justify;margin-left: 316px;margin-right: 40px;">
+        <div style="text-align: justify;">
          <div id="ionic" class="section scrollspy">
               <h4 class="header center"><b>Building Hybrid Web Application with Ionic from start to end</b></h4> <br><br>
               <p class="caption">
                 Apakah Ionic Framework itu?
               </p><br>
               <div class="center">
-              <img src="assets/img/logo_ionic.png" width="300" centered>
+              <img class="responsive-img" src="assets/img/logo_ionic.png" width="300" centered>
               </div><br>
               <p>
               Ionic Framework merupakan framework HTML5 yang masih baru, dirilis 2 tahun lalu
@@ -129,7 +212,7 @@
                 Apakah Code igniter itu?
               </p><br>
               <div class="center">
-              <img src="assets/img/codeigniter.png" width="300" centered>
+              <img class="responsive-img" src="assets/img/codeigniter.png" width="300" centered>
               </div>
               <p>
               Codeigniter adalah framework pengembangan aplikasi (Application Development Framework) dengan menggunakan PHP, suatu kerangka pembuatan program dengan menggunakan PHP. Pengembangan dapat langsung menghasilkan program dengan cukup singkat. Karena codeigniter menggunakan teknik MVC untuk pemrogramannya. MVC disini adalah dengen memisahkan antara data(model) dari tampilan (view) dan memprosesnya dengan controller.
@@ -140,7 +223,7 @@
               Bagaimana konsep MVC?
               </p><br>
               <div class="center">
-              <img src="assets/img/mvc.png" width="300" centered>
+              <img class="responsive-img" src="assets/img/mvc.png" width="300" centered>
               </div><br>
               <p>
               MVC adalah teknik atau konsep yang memisahkan komponen utama menjadi tiga komponen yaitu model, view dan controller.
@@ -159,7 +242,7 @@
               Bagaimana konsep API?
               </p><br>
               <div class="center">
-              <img src="assets/img/api.png" width="500" centered>
+              <img class="responsive-img" src="assets/img/api.png" width="500" centered>
               </div><br>
               <p>
               Sebuah API adalah antarmuka software-to-software, bukan user interface. Dengan API, aplikasi berbicara satu sama lain tanpa sepengetahuan pengguna atau intervensi. Asisten CNC dapat mendaftarkan dirinya melalui sebuah halaman register pada sebuah website, lalu data asisten tersebut dapat secara real-time terupdate pada aplikasi.
@@ -172,7 +255,7 @@
               Instalasi NodeJS
               </p>
               <div class="center">
-              <img src="assets/img/nodejs-new-pantone-black.png" width="300" centered>
+              <img class="responsive-img" src="assets/img/nodejs-new-pantone-black.png" width="300" centered>
               </div>
               <p>
               Tahapan pertama untuk install ionic adalah meng install Node.js. NodeJS adalah teknologi web server yang menggunakan bahasa javascript. Kelebihan dari NodeJS yaitu bisa menerima request dalam jumlah yang banyak dan mengeksekusinya secara parallel. Dengan menggunakan teknologi Google Javascript Engine V8, NodeJS menjalankan eksekusi perintah dalam waktu yang relative cepat. Dalam pengembangan web jaman sekarang dibutuhkan server yang cepat dalam melayani request dalam jumlah banyak sekaligus. Ionic merupakan salah satu yang menggunakan NodeJS ini. Ionic dapat Anda jalankan tanpa harus menginstall NodeJS terlebih dahulu, selain itu Ionic menggunakan teknologi NodeJS untuk menjalankan fungsi livereload, di mana aplikasi yang kita buat dapat langsung disimulasikan melalui browser secara real-time.
@@ -181,17 +264,17 @@
               Berikut ini tahap-tahapnya : <br><br>
               1. Buka <a href="https://nodejs.org/en/" target="_blank">https://nodejs.org/en/</a><br>
               <div class="center">
-              <img src="assets/img/image19.png" width="500" centered>
+              <img class="responsive-img" src="assets/img/image19.png" width="500" centered>
               </div><br>
               Download versi 4.4.2 LTS. Ionic hanya support NodeJS versi tersebut, tidak disarankan menginstal NodeJS versi 5.X
               </p>
               <p>
               2. Selesaikan langkah instalasi Next hingga selesai finish.<br>
               <div class="center">
-              <img src="assets/img/image02.png" width="500" centered>
+              <img class="responsive-img" src="assets/img/image02.png" width="500" centered>
               </div><br>
               <div class="center">
-              <img src="assets/img/image04.png" width="500" centered>
+              <img class="responsive-img" src="assets/img/image04.png" width="500" centered>
               </div>
               </p>
               <p>
@@ -202,7 +285,7 @@
               </p>
                <p>
               <div class="center">
-              <img src="assets/img/image23.png" width="500" centered>
+              <img class="responsive-img" src="assets/img/image23.png" width="500" centered>
               </div><br>
               4. Jika keluar seperti gambar di atas artinya nodeJS sudah sukses terinstall di komputer Anda dengan versi 4.4.2 sesuai yang direkomendasikan untuk menjalankan Ionic Framework.
               </p>
@@ -215,7 +298,7 @@
               Berikut ini tahap-tahapnya : <br><br>
               1. Buka <a href="http://ionicframework.com/getting-started/" target="_blank">http://ionicframework.com/getting-started/</a><br>
               <div class="center">
-              <img src="assets/img/ionic2.png" width="500" centered>
+              <img class="responsive-img" src="assets/img/ionic2.png" width="500" centered>
               </div>
               </p>
               <p>
@@ -224,14 +307,14 @@
                   $ npm install -g cordova ionic
               </code></pre>
               <div class="center">
-              <img src="assets/img/image21.png" width="500" centered><br>
+              <img class="responsive-img" class="responsive-img" src="assets/img/image21.png" width="500" centered><br>
               </div>
               Tunggu proses instalasi membutuhkan waktu yang cukup lama karena mendownload package-package yang cukup besar. Selesaikan proses instalasi.
               </p>
               <p>
               3. Jika proses instalasi sudah selesai akan meghasilkan seperti di bawah ini:
               <div class="center">
-              <img src="assets/img/image25.png" width="500" centered><br>
+              <img class="responsive-img" src="assets/img/image25.png" width="500" centered><br>
               </div>
               </p>
               <p>
@@ -240,7 +323,7 @@
                   $ ionic --version
               </code></pre><br>
               <div class="center">
-              <img src="assets/img/image08.png" width="500" centered><br>
+              <img class="responsive-img" src="assets/img/image08.png" width="500" centered><br>
               </div><br>
               Instalasi Ionic Framework sudah berhasil.
               </p>
@@ -255,7 +338,7 @@
               1.  Membuat project baru dengan nama aplikasi_cnc.
               Pada Ionic disediakan tiga template yang dapat kita gunakan secara langsung sejak awal proses pembuatan project.<br>
               <div class="center">
-              <img src="assets/img/image13.png" width="500" centered>
+              <img class="responsive-img" src="assets/img/image13.png" width="500" centered>
               </div><br>
               Pada project ini menggunakan template Blank. <br>
               Buka CMD lalu masuk ke dalam direktori di mana nanti project akan kita simpan. Jika sudah, ketikkan command untuk pembuatan project yang baru dengan nama aplikasi_cnc menggunakan Blank template. <br>
@@ -263,22 +346,22 @@
                   $ Ionic start aplikasi_cnc blank
               </code></pre><br>
               <div class="center">
-              <img src="assets/img/image27.png" width="500" centered>
+              <img class="responsive-img" src="assets/img/image27.png" width="500" centered>
               </div><br>
               Apabila keluar pertanyaan mengenai Push Notification, ketikkan huruf n untuk menyatakan tidak menggunakan fitur push notification. Pada project kali ini belum membutuhkan fitur tersebut.<br>
               <div class="center">
-              <img src="assets/img/image10.png" width="500" centered>
+              <img class="responsive-img" src="assets/img/image10.png" width="500" centered>
               </div><br>
               Tunggu hingga proses selesai. Apabila sudah berhasil akan menghasilkan seperti di bawah ini: <br>
               <div class="center">
-              <img src="assets/img/image06.png" width="500" centered>
+              <img class="responsive-img" src="assets/img/image06.png" width="500" centered>
               </div><br>
               </p>
               <p>
               2. Masuk ke dalam folder project kita maka akan terdapat struktur folder seperti
               di bawah ini:<br>
               <div class="center">
-              <img src="assets/img/image39.png" width="500" centered><br>
+              <img class="responsive-img" src="assets/img/image39.png" width="500" centered><br>
               </div><br>
               Proses pembuatan project baru berhasil dilakukan.
               </p>
@@ -294,7 +377,7 @@
               melalui browser. <br>
               1.  Buka CMD lalu masuk ke direktori project aplikasi_cnc<br>
               <div class="center">
-              <img src="assets/img/image32.png" width="500" centered>
+              <img class="responsive-img" src="assets/img/image32.png" width="500" centered>
               </div><br>
               </p>
               <p>
@@ -306,7 +389,7 @@
               secara real time. <br>
               Apabila muncul notice seperti di bawah ini: <br>
               <div class="center">
-              <img src="assets/img/image28.png" width="500" centered>
+              <img class="responsive-img" src="assets/img/image28.png" width="500" centered>
               </div><br>
               Pilihlah Ethernet, karena kita akan menduduki port tersebut untuk menjalankan live
               reload. Jika menggunakan localhost atau VMware dapat menyebabkan bentrok port
@@ -314,13 +397,13 @@
               Secara otomatis akan terbuka browser dan menampilkan tampilan awal dari project
               kita seperti di bawah ini: <br>
               <div class="center">
-              <img src="assets/img/image35.png" width="500" centered>
+              <img class="responsive-img" src="assets/img/image35.png" width="500" centered>
               </div><br>
               </p>
               <p>
               3. Untuk mengakhiri fungsi live reload, buka CMD lalu ketikkan huruf q. <br>
               <div class="center">
-              <img src="assets/img/image28.png" width="500" centered>
+              <img class="responsive-img" src="assets/img/image28.png" width="500" centered>
               </div><br>
               Maka  live reload akan diakhiri. Jika dilakukan refresh pada browser tidak akan menampilkan project kita lagi.
               </p>
@@ -334,7 +417,7 @@
               ini. Lakukan open folder aplikasi_cnc seperti di bawah ini: <br>
               1.  Buka CMD lalu masuk ke direktori project aplikasi_cnc<br>
               <div class="center">
-              <img src="assets/img/image16.png" width="350" centered>
+              <img class="responsive-img" src="assets/img/image16.png" width="350" centered>
               </div><br>
               Pada pelatihan kali ini file yang akan dilakukan perubahan hanya pada file app.js
               dan folder untuk tampilan. File-file html yang akan digunakan sebagai tampilan
@@ -342,7 +425,7 @@
               templates pada project kita. 
               </p>
               <div class="center">
-              <img src="assets/img/image12.png" width="350" centered>
+              <img class="responsive-img" src="assets/img/image12.png" width="350" centered>
               </div><br>
               Dalam folder templates ini file-file html akan dijadikan satu dalam folder sehingga dapat memudahkan dalam mengorganisasi file-file html agar tidak terpisah-pisah.
               <br><br>
@@ -362,11 +445,11 @@
               Agar file dapat dinamis sesuai routing maka harus dikonfigurasi seperti di bawah ini: <br>
               1.  Buka file index.html <br>
               <div class="center">
-              <img src="assets/img/image20.png" width="500" centered>
+              <img class="responsive-img" src="assets/img/image20.png" width="500" centered>
               </div><br>
               2. Lakukan perubahan pada bagian body, diganti dengan kode di bawah ini: <br><br>
               <div class="center">
-              <img src="assets/img/image07.png" width="500" centered>
+              <img class="responsive-img" src="assets/img/image07.png" width="500" centered>
               </div><br>
               Kode <b>ion-nav-view</b> akan menyesuaikan tampilan html mana yang akan ditampilkan sesuai dengan Routing pada app.js <br>
               Apabila kita lakukan ionic-serve maka akan menghasilkan tampilan white screen
@@ -380,7 +463,7 @@
               <p>
               1.  Buka file app.js <br>
               <div class="center">
-              <img src="assets/img/image29.png" width="500" centered>
+              <img class="responsive-img" src="assets/img/image29.png" width="500" centered>
               </div><br>
               2. Lakukan inisiasi variable app <br>
               <pre><code class="language-markup">
@@ -393,7 +476,7 @@
               </code></pre> <br>
               Seperti di bawah ini: <br>
               <div class="center">
-              <img src="assets/img/image33.png" width="500" centered>
+              <img class="responsive-img" src="assets/img/image33.png" width="500" centered>
               </div><br>
               </p>
       </div>
@@ -436,7 +519,7 @@
               </code></pre><br>
               Save dengan nama home.html pastikan dalam folder templates. <br>
               <div class="center">
-              <img src="assets/img/image03.png" width="500" centered>
+              <img class="responsive-img" src="assets/img/image03.png" width="500" centered>
               </div><br>
               2.  Membuat routing pada app.js yang berfungsi sebagai yang mengarahkan url / agar
               menampilkan file home.html. Bukalah app.js lalu tambahkan kode di bawah ini: <br>
@@ -451,20 +534,20 @@
                 });
               </code></pre><br>
               <div class="center">
-              <img src="assets/img/image05.png" width="500" centered>
+              <img class="responsive-img" src="assets/img/image05.png" width="500" centered>
               </div><br>
               Tampilan struktur kode keseluruhan app.js seperti di bawah ini: <br>
               <div class="center">
-              <img src="assets/img/image38.png" width="500" centered>
+              <img class="responsive-img" src="assets/img/image38.png" width="500" centered>
               </div><br>
               3. Karena dibutuhkan image logo CNC, logo SM CNC dan image foto CNC maka download pada <a href="https://www.dropbox.com/s/iyb9k6d66mo6297/logo.zip?dl=0">link</a> ini, masukkan ke dalam folder img. <br>
               <div class="center">
-              <img src="assets/img/image36.png" width="300" centered>
+              <img class="responsive-img" src="assets/img/image36.png" width="300" centered>
               </div><br>
               4. Coba lakukan live reload dengan command ionic serve melalui CMD. Maka akan
               menampilkan file home.html pada url default ( / ). Seperti tampilan di bawah ini: <br><br>
               <div class="center">
-              <img src="assets/img/image00.png" width="300" centered>
+              <img class="responsive-img" src="assets/img/image00.png" width="300" centered>
               </div><br>
               Halaman HOME untuk Aplikasi CNC sudah dapat berhasil buat. 
               </p>
@@ -524,11 +607,11 @@
                 });
               </code></pre><br>
               <div class="center">
-              <img src="assets/img/image26.png" width="500" centered>
+              <img class="responsive-img" src="assets/img/image26.png" width="500" centered>
               </div><br>
               Lakukan live reload lalu akses ke halaman Tentang. <br>
               <div class="center">
-              <img src="assets/img/image34.png" width="300" centered>
+              <img class="responsive-img" src="assets/img/image34.png" width="300" centered>
               </div><br>
               Halaman Tentang sudah berhasil dibuat <br>
       </div>
@@ -597,11 +680,11 @@
                     });
               </code></pre> <br>
               <div class="center">
-              <img src="assets/img/image24.png" width="500" centered>
+              <img class="responsive-img" src="assets/img/image24.png" width="500" centered>
               </div><br>
               3. Lakukan live reload lalu akses halaman asisten <br><br>
               <div class="center">
-              <img src="assets/img/image18.png" width="300" centered>
+              <img class="responsive-img" src="assets/img/image18.png" width="300" centered>
               </div><br>
               Pembuatan halaman ASISTEN sudah berhasil <br>
               </p>
@@ -614,7 +697,7 @@
               Sebuah API adalah antarmuka software-to-software, bukan user interface. Dengan
               API, aplikasi berbicara satu sama lain tanpa sepengetahuan pengguna atau intervensi. Asisten dapat mendaftarkan dirinya melalui sebuah halaman register pada sebuah website, lalu data asisten tersebut dapat secara real-time terupdate pada aplikasi. Konsep API dapat digambarkan seperti di bawah ini: <br>
               <div class="center">
-              <img src="assets/img/api.png" width="500" centered>
+              <img class="responsive-img" src="assets/img/api.png" width="500" centered>
               </div><br>
               API yang akan kita buat menggunakan sebuah framework PHP yang bernama CodeIgniter 
               (https://www.codeigniter.com/).  Framework itu sendiri adalah suatu kerangka kerja 
@@ -646,13 +729,13 @@
               2.  Ekstrak package CI tersebut dengan nama APIcnc. <br>
               3.  Masukkan ke dalam XAMPP / htdocs, seperti gambar di bawah ini: <br>
               <div class="center">
-              <img src="assets/img/image01.png" width="500" centered>
+              <img class="responsive-img" src="assets/img/image01.png" width="500" centered>
               </div><br>
               Setelah folder CodeIgniter sudah di Ekstrak ke folder C:\xampp\htdocs.
               Kemudian akses ke browser dengan alamat http://localhost/APIcnc/ akan muncul 
               tampilan seperti dibawah ini <br>
                <div class="center">
-              <img src="assets/img/image40.png" width="500" centered>
+              <img class="responsive-img" src="assets/img/image40.png" width="500" centered>
               </div><br>
               </p>
       </div>
@@ -663,11 +746,11 @@
               <p>
               Materialize CSS ini dikembangkan oleh Dogfalo (www.github.com/dogfalo) pada framework ini sudah tersedia berbagai macam komponen untuk membangun website mulai desain grid, tabel, form, button, dll. Framework responsive ini sudah mengadaptasi Bahasa desain Material Design by Google. Dengan menggunakan ini sebagai web developer diberikan kemudahan dalam membuat website yang indah dengan mudah dan cepat. <br>
               <div class="center">
-              <img src="assets/img/image09.png" width="500" centered>
+              <img class="responsive-img" src="assets/img/image09.png" width="500" centered>
               </div><br>
               Sebelum melakukan perancangan, download terlebih dahulu framework CSS di http://materializecss.com/getting-started.html <br>
               <div class="center">
-              <img src="assets/img/image37.png" width="500" centered>
+              <img class="responsive-img" src="assets/img/image37.png" width="500" centered>
               </div><br>
               Buat folder assets pada folder project kita di C:\xampp\htdocs\APIcnc. Kemudian ekstrak folder materialize tersebut. <br>
               </p>
@@ -679,10 +762,12 @@
               <p>
               1.       Setting base_url pada application/config/config.php<br>
               <div class="center">
-              <img src="assets/img/image17.png" width="300" centered>
+              <img class="responsive-img" src="assets/img/image17.png" width="300" centered>
               </div><br>
              
               </p>
       </div>
+  </div>
+</div>
 </body>
 </html>
